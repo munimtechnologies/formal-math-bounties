@@ -163,14 +163,14 @@ Written to the MathDB pilot's exposition rules (proved results separated from op
 claim cited, original contributions stated, a fixed tagged version), each with a small tested
 Python companion. None has been submitted to MathDB yet, because the pilot is not active.
 
-- [The Hadamard conjecture in October 2026](https://github.com/munimv2/hadamard-orders)
+- [The Hadamard conjecture in October 2026](https://github.com/munimtechnologies/hadamard-orders)
   (JSP-000013): proofs of the classical constructions, the August 2026 constructions of all
   remaining orders below 2000, and a matrix checker.
-- [Lehmer's problem in October 2026](https://github.com/munimv2/lehmer-problem) (JSP-000025):
+- [Lehmer's problem in October 2026](https://github.com/munimtechnologies/lehmer-problem) (JSP-000025):
   Mahler measure basics and Kronecker's theorem with proofs, the partial results from Smyth to
   Dobrowolski, the searches showing nothing new through degree 54, and a certified Mahler-measure
   calculator.
-- [The Littlewood conjecture in October 2026](https://github.com/munimv2/littlewood-conjecture)
+- [The Littlewood conjecture in October 2026](https://github.com/munimtechnologies/littlewood-conjecture)
   (JSP-000016): proofs of the basic reductions, Einsiedler–Katok–Lindenstrauss, the 2026 results on
   uniform and function-field versions, and certified continued-fraction tools.
 
