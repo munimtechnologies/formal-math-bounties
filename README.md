@@ -7,7 +7,7 @@ AI policy and identity checks was read from the organiser's own page on the date
 Maintained by MV2 of Munim, Inc. This guide was researched and written with AI agents working
 in MV2's name. Corrections welcome by issue or pull request.
 
-Last full check: 2026-10-14. Last update: 2026-10-14 (MathDB pilot state re-checked; expositions list added).
+Last full check: 2026-10-14. MathDB pilot register re-checked 2026-10-14 06:30 UTC.
 
 ## Summary table
 
@@ -65,10 +65,10 @@ Last full check: 2026-10-14. Last update: 2026-10-14 (MathDB pilot state re-chec
   being solved, has no 2026 date cutoff, and goes to the first contributor whose exposition satisfies
   the committee. Submission is through MathDB with a stable link, fixed version, date, authors and
   sources.
-- Status re-checked on 2026-10-14 (about 05:00 UTC): rollout state still `prepared`, no activation
-  date or UTC effective time published, every Solution, Lean and Exposition cell empty in all 49 rows,
-  reward levels not recorded in the repository. Automatic claims start only after activation is
-  announced and the official MathDB account is configured. No AI rule is stated.
+- Status re-checked 2026-10-14 06:30 UTC: rollout state still `prepared`, no activation date or
+  effective time published, all 49 Solution, Lean and Exposition cells empty (no candidate or award
+  published for any problem), reward levels not recorded in the repository. Automatic claims start
+  only after activation is announced. No AI rule is stated.
 
 ## 2. conjectures.io
 
@@ -157,20 +157,22 @@ Last full check: 2026-10-14. Last update: 2026-10-14 (MathDB pilot state re-chec
 5. Publish the commit before telling anyone: priority is decided by public history.
 6. Disclose AI use wherever the venue asks. Be the earliest verifiable complete proof.
 
-## Expositions by MV2, built to the MathDB rules
+## Expositions by MV2
 
-Each is a fixed, tagged release with proofs of the classical results, a dated status section, a
-proved-versus-open list, a statement of what is original, full sources, and a dependency-free Python
-companion that is published only after its unit tests pass. None of them has been submitted to
-MathDB yet, because the pilot is not active.
+Written to the MathDB pilot's exposition rules (proved results separated from open ones, every
+claim cited, original contributions stated, a fixed tagged version), each with a small tested
+Python companion. None has been submitted to MathDB yet, because the pilot is not active.
 
 - [The Hadamard conjecture in October 2026](https://github.com/munimv2/hadamard-orders)
-  (JSP-000013, MathDB #315867; release v1.0.0): the classical constructions with proofs, the August
-  2026 constructions for all open orders below 2000, and a Hadamard matrix checker.
-- [Lehmer's problem in October 2026](https://github.com/munimv2/lehmer-problem)
-  (JSP-000025, MathDB #315901; release v1.0.0): Mahler measure basics and Kronecker's theorem proved as
-  an exact algorithm, the partial results and the computations to degree 54, and certified Mahler
-  measure bounds.
+  (JSP-000013): proofs of the classical constructions, the August 2026 constructions of all
+  remaining orders below 2000, and a matrix checker.
+- [Lehmer's problem in October 2026](https://github.com/munimv2/lehmer-problem) (JSP-000025):
+  Mahler measure basics and Kronecker's theorem with proofs, the partial results from Smyth to
+  Dobrowolski, the searches showing nothing new through degree 54, and a certified Mahler-measure
+  calculator.
+- [The Littlewood conjecture in October 2026](https://github.com/munimv2/littlewood-conjecture)
+  (JSP-000016): proofs of the basic reductions, Einsiedler–Katok–Lindenstrauss, the 2026 results on
+  uniform and function-field versions, and certified continued-fraction tools.
 
 ## Sources
 
