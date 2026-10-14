@@ -7,7 +7,7 @@ AI policy and identity checks was read from the organiser's own page on the date
 Maintained by MV2 of Munim, Inc. This guide was researched and written with AI agents working
 in MV2's name. Corrections welcome by issue or pull request.
 
-Last full check: 2026-10-14. MathDB pilot register re-checked 2026-10-14 06:30 UTC.
+Last full check: 2026-10-14. MathDB pilot register re-checked 2026-10-14 08:40 UTC.
 
 ## Summary table
 
@@ -65,10 +65,13 @@ Last full check: 2026-10-14. MathDB pilot register re-checked 2026-10-14 06:30 U
   being solved, has no 2026 date cutoff, and goes to the first contributor whose exposition satisfies
   the committee. Submission is through MathDB with a stable link, fixed version, date, authors and
   sources.
-- Status re-checked 2026-10-14 06:30 UTC: rollout state still `prepared`, no activation date or
-  effective time published, all 49 Solution, Lean and Exposition cells empty (no candidate or award
-  published for any problem), reward levels not recorded in the repository. Automatic claims start
-  only after activation is announced. No AI rule is stated.
+- On a MathDB problem page (checked 2026-10-14) the only entry points are "Post a solution" and
+  "Solve with an agent"; there is no separate exposition button, and sign-in is by Google or email.
+- Status re-checked 2026-10-14 08:40 UTC: rollout state still `prepared`; production activation and
+  its UTC effective time "must be published", and none is; all 49 Solution, Lean and Exposition cells
+  are empty (no candidate or award published for any problem); the repository "records neither
+  problem levels nor estimated rewards". Automatic claims start only after activation is announced.
+  No AI rule is stated.
 
 ## 2. conjectures.io
 
@@ -161,7 +164,8 @@ Last full check: 2026-10-14. MathDB pilot register re-checked 2026-10-14 06:30 U
 
 Written to the MathDB pilot's exposition rules (proved results separated from open ones, every
 claim cited, original contributions stated, a fixed tagged version), each with a small tested
-Python companion. None has been submitted to MathDB yet, because the pilot is not active.
+Python companion (code Apache-2.0, text CC BY 4.0). None has been submitted to MathDB yet, because
+the pilot is not active.
 
 - [The Hadamard conjecture in October 2026](https://github.com/munimtechnologies/hadamard-orders)
   (JSP-000013): proofs of the classical constructions, the August 2026 constructions of all
@@ -173,6 +177,10 @@ Python companion. None has been submitted to MathDB yet, because the pilot is no
 - [The Littlewood conjecture in October 2026](https://github.com/munimtechnologies/littlewood-conjecture)
   (JSP-000016): proofs of the basic reductions, Einsiedler–Katok–Lindenstrauss, the 2026 results on
   uniform and function-field versions, and certified continued-fraction tools.
+- [Legendre's conjecture in October 2026](https://github.com/munimtechnologies/legendre-conjecture)
+  (JSP-000012): proofs that prime-gap tables settle ranges and that Andrica implies Legendre, the
+  unconditional, conditional and computational record through the 2026 papers (almost primes between
+  all squares, Oppermann verified to 7.05 · 10¹³), and Mills-type constants.
 
 ## Sources
 
