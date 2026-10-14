@@ -7,7 +7,7 @@ AI policy and identity checks was read from the organiser's own page on the date
 Maintained by MV2 of Munim, Inc. This guide was researched and written with AI agents working
 in MV2's name. Corrections welcome by issue or pull request.
 
-Last full check: 2026-10-14. MathDB pilot register re-checked 2026-10-14 08:40 UTC.
+Last full check: 2026-10-14. MathDB pilot register re-checked 2026-10-14 about 09:40 UTC.
 
 ## Summary table
 
@@ -67,11 +67,11 @@ Last full check: 2026-10-14. MathDB pilot register re-checked 2026-10-14 08:40 U
   sources.
 - On a MathDB problem page (checked 2026-10-14) the only entry points are "Post a solution" and
   "Solve with an agent"; there is no separate exposition button, and sign-in is by Google or email.
-- Status re-checked 2026-10-14 08:40 UTC: rollout state still `prepared`; production activation and
-  its UTC effective time "must be published", and none is; all 49 Solution, Lean and Exposition cells
-  are empty (no candidate or award published for any problem); the repository "records neither
-  problem levels nor estimated rewards". Automatic claims start only after activation is announced.
-  No AI rule is stated.
+- Status re-checked 2026-10-14 about 09:40 UTC: rollout state still `prepared`; production
+  activation and its UTC effective time "must be published", and none is; all 49 Solution, Lean and
+  Exposition cells are empty (no candidate or award published for any problem); the repository
+  "records neither problem levels nor estimated rewards". Automatic claims start only after
+  activation is announced. No AI rule is stated.
 
 ## 2. conjectures.io
 
@@ -181,6 +181,11 @@ the pilot is not active.
   (JSP-000012): proofs that prime-gap tables settle ranges and that Andrica implies Legendre, the
   unconditional, conditional and computational record through the 2026 papers (almost primes between
   all squares, Oppermann verified to 7.05 · 10¹³), and Mills-type constants.
+- [The Kakeya conjecture in October 2026](https://github.com/munimtechnologies/kakeya-conjecture)
+  (JSP-000015): the planar bound and Dvir's finite-field theorem with proofs, a dated record of
+  dimension bounds through Wang–Zahl (**R**³, 2025) and the August 2026 **R**⁴ preprint, and a
+  Kakeya-set checker for AG(*n*, *q*) with the parabola and Smyth constructions, the observation that
+  over **F**₂ Kakeya sets are difference bases, and a table of which small exact values are open.
 
 ## Sources
 
