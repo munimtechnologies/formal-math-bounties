@@ -7,7 +7,7 @@ AI policy and identity checks was read from the organiser's own page on the date
 Maintained by MV2 of Munim, Inc. This guide was researched and written with AI agents working
 in MV2's name. Corrections welcome by issue or pull request.
 
-Last full check: 2026-10-14.
+Last full check: 2026-10-14. Last update: 2026-10-14 (MathDB pilot state re-checked; expositions list added).
 
 ## Summary table
 
@@ -65,8 +65,10 @@ Last full check: 2026-10-14.
   being solved, has no 2026 date cutoff, and goes to the first contributor whose exposition satisfies
   the committee. Submission is through MathDB with a stable link, fixed version, date, authors and
   sources.
-- Status on 2026-10-14: rollout state `prepared`; no pilot awards; reward levels not recorded in
-  the repository; automatic claims start only after activation is announced. No AI rule is stated.
+- Status re-checked on 2026-10-14 (about 05:00 UTC): rollout state still `prepared`, no activation
+  date or UTC effective time published, every Solution, Lean and Exposition cell empty in all 49 rows,
+  reward levels not recorded in the repository. Automatic claims start only after activation is
+  announced and the official MathDB account is configured. No AI rule is stated.
 
 ## 2. conjectures.io
 
@@ -155,11 +157,20 @@ Last full check: 2026-10-14.
 5. Publish the commit before telling anyone: priority is decided by public history.
 6. Disclose AI use wherever the venue asks. Be the earliest verifiable complete proof.
 
-## Example: an exposition built to the MathDB rules
+## Expositions by MV2, built to the MathDB rules
 
-[The Hadamard conjecture in October 2026](https://github.com/munimv2/hadamard-orders) (MV2 of
-Munim, Inc.): proofs of the classical results, the August 2026 constructions for all open orders
-below 2000, a proved-versus-open list, and a tested Python checker.
+Each is a fixed, tagged release with proofs of the classical results, a dated status section, a
+proved-versus-open list, a statement of what is original, full sources, and a dependency-free Python
+companion that is published only after its unit tests pass. None of them has been submitted to
+MathDB yet, because the pilot is not active.
+
+- [The Hadamard conjecture in October 2026](https://github.com/munimv2/hadamard-orders)
+  (JSP-000013, MathDB #315867; release v1.0.0): the classical constructions with proofs, the August
+  2026 constructions for all open orders below 2000, and a Hadamard matrix checker.
+- [Lehmer's problem in October 2026](https://github.com/munimv2/lehmer-problem)
+  (JSP-000025, MathDB #315901; release v1.0.0): Mahler measure basics and Kronecker's theorem proved as
+  an exact algorithm, the partial results and the computations to degree 54, and certified Mahler
+  measure bounds.
 
 ## Sources
 
