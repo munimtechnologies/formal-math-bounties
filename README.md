@@ -16,6 +16,7 @@ Last full check: 2026-10-14. MathDB pilot register re-checked 2026-10-14 about 0
 | Justin Sun Prize (JSP), legacy process | Yes, per problem; 70% prover / 30% formalizer | USDT (TRC-20) or USDC (ERC-20) only | None | Allowed; AI cannot be the payee | KYC, email identity link | Open; large review backlog |
 | JSP MathDB pilot (49 major problems) | Yes; 50% solution / 30% Lean / 20% exposition | Same as JSP | None | Not addressed in the pilot rules | Same as JSP | Rules published; rollout state "prepared" (not yet active) |
 | conjectures.io | Yes, about $4,900 per open problem settled | Subnet token (Bittensor alpha) | 0.25 τ per verification attempt | Any method, never inspected | None stated | Open; 274 problems, pool about $55,000 |
+| Swarm Tips (Shillbot Lean 4 escrow) | Yes, 0.02–0.195 SOL per open problem | SOL (Solana Mainnet Anchor escrow) | None ($0 gas onboarding available) | Explicitly welcome; AI wallet can be the payee | None (Solana wallet keypair only) | Open; 22 problems, ~2.58 SOL locked (checked 2026-11-14) |
 | Palomar registry | No money | — | None | Allowed, must be disclosed in formalization.yaml | None | Open since 2026-08-18 |
 | Mathlib (pull requests) | No money | — | None | Allowed with disclosure; low-quality LLM PRs closed on sight | GitHub only | Open |
 | Formal Conjectures (DeepMind) | No money | — | None | Same policy as Mathlib | Google CLA | Open |
@@ -90,6 +91,32 @@ Last full check: 2026-10-14. MathDB pilot register re-checked 2026-10-14 about 0
   built.
 - Reality check: these are genuinely open problems. In Epoch AI's harder 68-problem set, the best
   model resolved 2 of 68 on its official run.
+
+### 2a. Swarm Tips (Shillbot Lean 4 escrow)
+
+- Site: https://swarm.tips/bounties — Spec: https://swarm.tips/docs/shillbot/lean-proof-bounties/ —
+  Code & catalog: https://github.com/corsur/swarm-tips
+- Non-custodial Solana Mainnet Anchor escrow (`2tR37nqMpwdV4DVUHjzUmL1rH2DtkA8zrRA4EAhT7KMi`) where
+  each problem locks native SOL in an inspectable per-task PDA (`https://swarm.tips/bounties/lean/<slug>`).
+  As of 2026-11-14, 22 open bounties hold 2.58 SOL total (0.02–0.195 SOL per problem), spanning
+  Millennium decomposition rungs (Lagarias Π₁⁰ rational envelopes, ZFC inaccessible reflection,
+  Shannon/De Morgan circuit bounds, congruent-number sub-lemmas) and open conjectures (Collatz,
+  Goldbach, Twin Primes, RH).
+- Fee: none. Unfunded wallets (`0 SOL`) can call `POST https://api.shillbot.org/agent/onboard` (or
+  `shillbot_onboard` over MCP) to receive sponsor-fronted PDA rent recouped only out of earned
+  payouts. No KYC or account registration; any human or autonomous agent with a Solana keypair can
+  claim, submit and finalize directly on-chain.
+- Verification is fully automated in an air-gapped sandbox (`leanprover/lean4:v4.30.0`, Mathlib
+  `c5ea00351c28e24afc9f0f84379aa41082b1188f`) followed by `lean4export` and an independent Rust
+  kernel check (`nanoda`), enforcing `propext`, `Classical.choice`, `Quot.sound` only (or
+  constructive core `[propext]` on `lean_policy: 1`) and rejecting `sorryAx`, `Lean.ofReduceBool`,
+  user axioms and `@[command_elab]` / `IO.Process` escapes.
+- Reality check: individual bounties are small (0.02–0.195 SOL, tens of dollars rather than
+  thousands), aimed at automated provers and modular sub-lemmas rather than major prizes. Early
+  bidirectional statements produced two genuine formal counterexamples to under-constrained helper
+  lemmas (`A = [[0,1],[1,0]]` and a `p = 2` parity witness), published at
+  https://swarm.tips/research#formal-bounties; statements now default to positive proof
+  (`statementProp`) unless explicitly marked bidirectional.
 
 ## 3. Palomar, a registry of Lean-verified mathematics
 
@@ -194,6 +221,7 @@ the pilot is not active.
 - JSP-000060 audit closure: https://github.com/TheJustinSunPrize/awards/pull/947
 - JSP first awards press release (2026-10-05): https://www.globenewswire.com/news-release/2026/10/05/3375070/0/en/justin-sun-prize-s-new-round-honors-human-ai-collaboration-on-erd%C5%91s-problems.html
 - conjectures.io: https://conjectures.io, https://conjectures.io/how-it-works, https://conjectures.io/problems
+- Swarm Tips (Shillbot Lean 4 escrow): https://swarm.tips/bounties, https://swarm.tips/docs/shillbot/lean-proof-bounties/, https://swarm.tips/research#formal-bounties, https://github.com/corsur/swarm-tips
 - Palomar: https://palomar-registry.org/about; Tao's post https://terrytao.wordpress.com/2026/08/18/palomar-a-registry-of-lean-verified-mathematics/
 - Mathlib contributing: https://leanprover-community.github.io/contribute/index.html
 - Mathlib Initiative roadmap: https://mathlib-initiative.org/roadmap/; funding update: https://www.renaissancephilanthropy.org/insights/renaissance-philanthropy-and-xtx-markets-announce-further-171-million-to-accelerate-mathematical-progress
